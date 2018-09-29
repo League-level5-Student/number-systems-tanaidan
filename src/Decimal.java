@@ -41,23 +41,32 @@ public class Decimal {
 		hexVals.put(3, "3");
 		hexVals.put(2, "2");
 		hexVals.put(1, "1");
+		hexVals.put(0, "0");
 		String hex = "";
 		double testVal = 0;
 		int power = 1;
 		while (x-testVal>0) {
 			power += 1;
-			testVal = Math.pow(2, power);
+			testVal = Math.pow(16, power);
 		}
 		power -= 1;
-		testVal = Math.pow(2,power);
+		//System.out.println(power);
+		//testVal = Math.pow(16,power);
+		//System.out.println(testVal);
+		System.out.println("x is " + x);
 		for (int i=power; i>=0; i--) {
-			for (int j=15; j>0; j--) {
-				if (x- j*(Math.pow(16, power)) > 0) {
-					System.out.println("Hello");
+			for (int j=15; j>=0; j--) {
+				//System.out.println(j*Math.pow(16, power));
+				if (x- j*(Math.pow(16, i)) >= 0) {
+					hex += hexVals.get(j);
+					x -= j*Math.pow(16, i);
+					System.out.println("x is " + x);
+					System.out.println("hex is " + hex);
+					break;
 				}
 			}
 		}
-		return "hi";
+		return hex;
 	}
 	
 	
