@@ -19,8 +19,8 @@ public class NumberConverter {
 	//}
 	
 	@Test
-	public void testDecimal() {
-		Decimal dec = new Decimal();
-		assertEquals("10001000001",dec.decToBin(1089));
+	public void test() {
+		Binary bin = new Binary();
+		
 	}
 }

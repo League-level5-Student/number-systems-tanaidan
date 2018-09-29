@@ -53,7 +53,7 @@ public class Decimal {
 		for (int i=power; i>=0; i--) {
 			for (int j=15; j>0; j--) {
 				if (x- j*(Math.pow(2, power)) > 0) {
-					hex += 
+					
 				}
 			}
 		}
