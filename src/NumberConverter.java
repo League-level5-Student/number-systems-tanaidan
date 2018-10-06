@@ -11,7 +11,7 @@ public class NumberConverter {
 		//Binary bin = new Binary();
 		
 		//Converts hexToDec and hexToBin
-		//Hexadecimal hex = new Hexadecimal();
+		Hexadecimal hex = new Hexadecimal();
 		
 		//Create and displays menu
 		//Menu menu = new Menu(bin, hex, dec);
@@ -19,15 +19,19 @@ public class NumberConverter {
 	//}
 	
 	@Test
-<<<<<<< HEAD
 	public void testDecimal() {
-		Decimal dec = new Decimal();
+		//Decimal dec = new Decimal();
 		//assertEquals("10001000001",dec.decToBin(1089));
-		assertEquals("438",dec.decToHex(1080));
-=======
+		//assertEquals("438",dec.decToHex(1080));
+	}
+	@Test
 	public void test() {
-		Binary bin = new Binary();
+		//Binary bin = new Binary();
 		
->>>>>>> binToDec
+	}
+	@Test
+	public void testHex() {
+		Hexadecimal hex = new Hexadecimal();
+		assertEquals(new Integer (60244), hex.hexToDec("EB54"));
 	}
 }
