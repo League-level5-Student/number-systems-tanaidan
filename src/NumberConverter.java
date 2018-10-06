@@ -32,6 +32,7 @@ public class NumberConverter {
 	@Test
 	public void testHex() {
 		Hexadecimal hex = new Hexadecimal();
-		assertEquals(new Integer (60244), hex.hexToDec("EB54"));
+		//assertEquals(new Integer (60244), hex.hexToDec("EB54"));
+		assertEquals("00111010", hex.hexToBin("3A"));
 	}
 }

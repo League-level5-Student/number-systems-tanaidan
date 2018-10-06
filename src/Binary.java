@@ -23,7 +23,7 @@ public class Binary {
 			total+=digit;
 		}
 		
-		return ;
+		return a;
 	}
 
 }
