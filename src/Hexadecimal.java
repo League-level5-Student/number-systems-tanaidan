@@ -29,7 +29,7 @@ public class Hexadecimal {
 		return decVal ;
 	}
 	
-	public String hexToBin(String x) {
+	public String hexToBin(String x) { //hiello
 		return x;
 	}
 }
