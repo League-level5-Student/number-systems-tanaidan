@@ -18,20 +18,4 @@ public class NumberConverter {
 		//menu.display();
 	//}
 	
-	@Test
-	public void testDecimal() {
-		//Decimal dec = new Decimal();
-		//assertEquals("10001000001",dec.decToBin(1089));
-		//assertEquals("438",dec.decToHex(1080));
-	}
-	@Test
-	public void test() {
-		//Binary bin = new Binary();
-		
-	}
-	@Test
-	public void testHex() {
-		Hexadecimal hex = new Hexadecimal();
-		assertEquals(new Integer (60244), hex.hexToDec("EB54"));
-	}
 }
