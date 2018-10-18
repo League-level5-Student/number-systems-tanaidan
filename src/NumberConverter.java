@@ -25,11 +25,11 @@ public class NumberConverter {
 //		//assertEquals("10001000001",dec.decToBin(1089));
 //		//assertEquals("438",dec.decToHex(1080));
 //	}
-//	@Test
-//	public void test() {
-//		//Binary bin = new Binary();
-//		
-//	}
+	@Test
+	public void test() {
+		Binary bin = new Binary();
+		assertEquals("4B5", bin.binToHex("10010110101"));
+	}
 //	@Test
 //	public void testHex() {
 //		//Hexadecimal hex = new Hexadecimal();

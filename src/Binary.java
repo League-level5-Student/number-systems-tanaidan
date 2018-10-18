@@ -28,43 +28,57 @@ public class Binary {
 			int digit = temp*expo;
 			count++;
 			total+=digit;
-			System.out.println("Digit: "+digit);
-			System.out.println("Total: "+total);
+			//System.out.println("Digit: "+digit);
+			//System.out.println("Total: "+total);
 			indexCount++;
 			if(indexCount==a.length() && remainder != 0) {
 				switch (total) {
 				case 10: 
 					arr.append('A');
+					break;
 				case 11:
 					arr.append('B');
+					break;
 				case 12:
 					arr.append('C');
+					break;
 				case 13:
 					arr.append('D');
+					break;
 				case 14:
 					arr.append('E');
+					break;
 				case 15:
 					arr.append('F');
+					break;
 				default:
 					arr.append(total);
+					break;
 				}
 			}
 			if(((indexCount)%4 == 0) && (indexCount!=0)) {
 				switch (total) {
 				case 10: 
 					arr.append('A');
+					break;
 				case 11:
 					arr.append('B');
+					break;
 				case 12:
 					arr.append('C');
+					break;
 				case 13:
 					arr.append('D');
+					break;
 				case 14:
 					arr.append('E');
+					break;
 				case 15:
 					arr.append('F');
+					break;
 				default:
 					arr.append(total);
+					break;
 				}
 				count = 0;
 				total = 0;
